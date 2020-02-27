@@ -46,7 +46,7 @@
 
     data.results.filter(e => e.Date == '12/20/2019').forEach(element => {
         var myIcon = L.icon({
-            iconUrl: 'https://raw.githubusercontent.com/DatoJanez/recycling-plastic-bottles-in-rustavi/master/icons/'+ Math.ceil(element.score) +'.png',
+            iconUrl: 'https://raw.githubusercontent.com/DatoJanez/recycling-plastic-bottles-in-rustavi/master/icons_b/'+ Math.ceil(element.score) +'.png',
             iconSize: [30, 30],
         });
         L.marker([element.Latitude, element.Longitude], {icon: myIcon}).addTo(mymap)
